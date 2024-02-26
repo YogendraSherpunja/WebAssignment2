@@ -5,7 +5,8 @@ dbConnect().catch((err) => console.log(err));
 
 async function dbConnect() {
   await mongoose.connect(
-    `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.nrordbg.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority&appName=Cluster0`
+   // `mongodb+srv://yogendramagar15:F7XRhuT76JgBCOK1@cluster0.iw8mapk.mongodb.net/Marketplace?retryWrites=true&w=majority&appName=Cluster0`
+   `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.iw8mapk.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority&appName=Cluster0`
   );
 }
 
